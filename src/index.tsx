@@ -497,25 +497,26 @@ export class Rnd extends React.Component<Props, State> {
     this.draggable.setState(position);
   }
 
+  //Fix
   getOffsetFromParent(): { top: number; left: number } {
     const scale = this.props.scale as number;
     const parent = this.getParent();
     const self = this.getSelfElement();
-    if (!parent || self === null) {
+//     if (!parent || self === null) {
       return {
         top: 0,
         left: 0,
       };
-    }
-    const parentRect = parent.getBoundingClientRect();
-    const parentLeft = parentRect.left;
-    const parentTop = parentRect.top;
-    const selfRect = self.getBoundingClientRect();
-    const position = this.getDraggablePosition();
-    return {
-      left: selfRect.left - parentLeft - position.x * scale,
-      top: selfRect.top - parentTop - position.y * scale,
-    };
+//     }
+//     const parentRect = parent.getBoundingClientRect();
+//     const parentLeft = parentRect.left;
+//     const parentTop = parentRect.top;
+//     const selfRect = self.getBoundingClientRect();
+//     const position = this.getDraggablePosition();
+//     return {
+//       left: selfRect.left - parentLeft - position.x * scale,
+//       top: selfRect.top - parentTop - position.y * scale,
+//     };
   }
 
   render() {
