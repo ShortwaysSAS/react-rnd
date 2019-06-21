@@ -1,8 +1,8 @@
 {
-  "name": "react-rnd",
+  "name": "shortways-react-rnd",
   "version": "9.2.0",
   "description": "",
-  "title": "react-rnd",
+  "title": "shortways-react-rnd",
   "main": "./lib/index.es5.js",
   "module": "./lib/index.js",
   "jsnext:main": "./lib/index.js",
@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bokuweb/react-rnd.git"
+    "url": "https://github.com/ShortwaysSAS/shortways-react-rnd.git"
   },
-  "author": "bokuweb",
+  "author": "ShortwaysSAS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bokuweb/react-rnd/issues"
+    "url": "https://github.com/ShortwaysSAS/shortways-react-rnd/issues"
   },
-  "homepage": "https://github.com/bokuweb/react-rnd",
+  "homepage": "https://github.com/ShortwaysSAS/shortways-react-rnd",
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.5",
