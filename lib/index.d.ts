@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DraggableEventHandler } from "react-draggable";
+import { DraggableEventHandler } from "shortways-react-draggable";
 import { Resizable, ResizeDirection } from "re-resizable";
 declare type $TODO = any;
 export declare type Grid = [number, number];
