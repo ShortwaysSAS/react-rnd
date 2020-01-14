@@ -1,11 +1,11 @@
 import * as React from "react";
-import { DraggableEventHandler } from "react-draggable";
+import { DraggableEventHandler } from "shortways-react-draggable";
 import { Resizable, ResizeDirection } from "re-resizable";
 
 // FIXME: https://github.com/mzabriskie/react-draggable/issues/381
 //         I can not find `scale` too...
 type $TODO = any;
-const Draggable = require("react-draggable");
+const Draggable = require("shortways-react-draggable");
 
 export type Grid = [number, number];
 
@@ -174,12 +174,12 @@ export class Rnd extends React.Component<Props, State> {
     maxWidth: Number.MAX_SAFE_INTEGER,
     maxHeight: Number.MAX_SAFE_INTEGER,
     scale: 1,
-    onResizeStart: () => {},
-    onResize: () => {},
-    onResizeStop: () => {},
-    onDragStart: () => {},
-    onDrag: () => {},
-    onDragStop: () => {},
+    onResizeStart: () => { },
+    onResize: () => { },
+    onResizeStop: () => { },
+    onDragStart: () => { },
+    onDrag: () => { },
+    onDragStop: () => { },
   };
   resizable!: Resizable;
   draggable!: $TODO; // Draggable;
@@ -502,21 +502,21 @@ export class Rnd extends React.Component<Props, State> {
     const scale = this.props.scale as number;
     const parent = this.getParent();
     const self = this.getSelfElement();
-//     if (!parent || self === null) {
-      return {
-        top: 0,
-        left: 0,
-      };
-//     }
-//     const parentRect = parent.getBoundingClientRect();
-//     const parentLeft = parentRect.left;
-//     const parentTop = parentRect.top;
-//     const selfRect = self.getBoundingClientRect();
-//     const position = this.getDraggablePosition();
-//     return {
-//       left: selfRect.left - parentLeft - position.x * scale,
-//       top: selfRect.top - parentTop - position.y * scale,
-//     };
+    //     if (!parent || self === null) {
+    return {
+      top: 0,
+      left: 0,
+    };
+    //     }
+    //     const parentRect = parent.getBoundingClientRect();
+    //     const parentLeft = parentRect.left;
+    //     const parentTop = parentRect.top;
+    //     const selfRect = self.getBoundingClientRect();
+    //     const position = this.getDraggablePosition();
+    //     return {
+    //       left: selfRect.left - parentLeft - position.x * scale,
+    //       top: selfRect.top - parentTop - position.y * scale,
+    //     };
   }
 
   render() {
