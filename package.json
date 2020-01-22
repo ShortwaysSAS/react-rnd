@@ -89,8 +89,7 @@
     "tslint-eslint-rules": "5.4.0",
     "tslint-plugin-prettier": "2.0.1",
     "tslint-react": "4.0.0",
-    "typescript": "3.5.2",
-    "shortways-react-draggable": "github:ShortwaysSAS/shortways-react-draggable#cf0c6dbcaae02d34a1f62f539bb9b108c80d660c"
+    "typescript": "3.5.2"
   },
   "files": [
     "lib"
@@ -100,6 +99,7 @@
   },
   "dependencies": {
     "re-resizable": "5.0.1",
+    "shortways-react-draggable": "github:ShortwaysSAS/shortways-react-draggable#cf0c6dbcaae02d34a1f62f539bb9b108c80d660c",
     "tslib": "1.10.0"
   }
 }
