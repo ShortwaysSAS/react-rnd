@@ -17,8 +17,8 @@ export default {
     globals: {
       react: 'React',
       're-resizable': 'Resizable',
-      'shortways-react-draggable': 'Draggable',
+      'react-draggable': 'Draggable',
     },
   },
-  external: ['react', 're-resizable', 'shortways-react-draggable'],
+  external: ['react', 're-resizable', 'react-draggable'],
 };
