@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DraggableEventHandler } from "shortways-react-draggable";
+import { DraggableEventHandler } from "react-draggable";
 import { Resizable, ResizeDirection } from "re-resizable";
 
 // FIXME: https://github.com/mzabriskie/react-draggable/issues/381
