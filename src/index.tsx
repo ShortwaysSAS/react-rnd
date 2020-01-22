@@ -1,11 +1,11 @@
 import * as React from "react";
-import { DraggableEventHandler } from "react-draggable";
+import { DraggableEventHandler } from "shortways-react-draggable";
 import { Resizable, ResizeDirection } from "re-resizable";
 
 // FIXME: https://github.com/mzabriskie/react-draggable/issues/381
 //         I can not find `scale` too...
 type $TODO = any;
-const Draggable = require("react-draggable");
+const Draggable = require("shortways-react-draggable");
 
 export type Grid = [number, number];
 
