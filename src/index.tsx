@@ -295,10 +295,10 @@ export class Rnd extends React.Component<Props, State> {
       const parentRect = parent.getBoundingClientRect();
       const parentLeft = parentRect.left;
       const parentTop = parentRect.top;
-      const left = -(parentLeft - parent.offsetLeft * scale) / scale;
-      const top = -(parentTop - parent.offsetTop * scale) / scale;
-      const right = (window.innerWidth - this.resizable.size.width * scale) / scale + left;
-      const bottom = (window.innerHeight - this.resizable.size.height * scale) / scale + top;
+      const left = +(parentLeft - parent.offsetLeft * scale - this.resizable.size.width * scale) / scale;
+      const top = +(parentTop - parent.offsetTop * scale - this.resizable.size.height * scale) / scale;
+      const right = -window.innerWidth / scale + (parentLeft - parent.offsetLeft * scale) / scale;
+      const bottom = -window.innerHeight / scale + (parentTop - parent.offsetTop * scale) / scale;
       return this.setState({ bounds: { top, right, bottom, left } });
     } else {
       boundary = document.querySelector(this.props.bounds);
