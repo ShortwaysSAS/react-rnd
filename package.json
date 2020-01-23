@@ -99,7 +99,7 @@
   },
   "dependencies": {
     "re-resizable": "5.0.1",
-    "react-draggable": "3.3.0",
+    "shortways-react-draggable": "github:ShortwaysSAS/shortways-react-draggable#a3aaa65408730370b5b5a08c46ffa57fb4d97ef3",
     "tslib": "1.10.0"
   }
 }
