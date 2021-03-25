@@ -80,6 +80,10 @@ export interface Props {
     position?: {
         x: number;
         y: number;
+        anchor: {
+            isTop: boolean;
+            isLeft: boolean;
+        };
     };
     size?: Size;
     resizeGrid?: Grid;
