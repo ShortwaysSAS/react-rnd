@@ -57,7 +57,7 @@
     "@types/enzyme": "3.1.16",
     "@types/enzyme-adapter-react-16": "1.0.4",
     "@types/react": "16.4.1",
-    "@types/node": "^10.12.19",
+    "@types/node": "10.12.19",
     "@types/react-dom": "16.0.11",
     "@types/sinon": "7.0.13",
     "@types/storybook__addon-actions": "3.4.3",
@@ -99,7 +99,7 @@
   },
   "dependencies": {
     "re-resizable": "5.0.1",
-    "shortways-react-draggable": "github:ShortwaysSAS/shortways-react-draggable#fd9d00e638a7ce6ccff1bac147d505e36c80a43c",
+    "shortways-react-draggable": "github:ShortwaysSAS/shortways-react-draggable#2e1281c863c7941920f3416f61fc746fbef91404",
     "tslib": "1.10.0"
   }
 }
